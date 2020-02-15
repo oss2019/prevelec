@@ -44,7 +44,10 @@ const cred = {
 app.get("/home",function(req,res){
   res.render("home");
 });
+app.get("/achievements",function(req,res){
+res.render("achievements");
 
+});
 
 app.get("/blog", function(req, res){
   res.render("blog", {
@@ -127,7 +130,10 @@ var year=["January","February","March","April","May","June","July","August","Sep
 app.get("/dash",function(req,res){
   res.render("dash");
 });
+app.get("/posts",function(req,res){
+res.render("blog");
 
+});
 app.get("/posts/:postName", function(req, res){
   const requestedTitle = _.lowerCase(req.params.postName);
 
