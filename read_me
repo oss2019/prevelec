@@ -1,0 +1,26 @@
+--------------------Instructions for execution---------------------------------
+-------------------------------------------------------------------------------
+
+---Software to be installed beforehand:----------------------------------------
+1. NodeJs
+
+
+
+Using the product--------------------------------------------------------------
+
+The website server is initiated by -
+node app.js
+~command on git bash.
+
+You are asked to log in to your account right off the bat.
+username: abc 
+password: fgh
+anything other than the above credentials would not take you anywhere.
+
+once logged in, you are taken to the dashboard.
+
+you may use the nav bar to navigate across the various web pages.
+note that we have included a text blog in the given website.
+
+once done, you may sign out by clicking the signout button.
+-------------------------------------------------------------------------------
