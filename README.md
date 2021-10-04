@@ -12,7 +12,6 @@ The website server is initiated by - <br>
 npm i<br>
 node app.js<br>
 ~command on git bash.<br>
-
 <h2>About the website</h2>
 <ul>
 <li>You are first asked to log in to your account.
@@ -53,14 +52,15 @@ Signout: Signs a user out of the active session.
 <li> Valid pull requests will be merged</li>
 </ul>
 
-<h3> Enhancements available to do </h3>
+<h3> Enhancements available to do </h3> (difficulty mentioned out of 5 and graded relatively)
 <ul>
-<li> Fixing the deprecation warning of body parser at app.js</li>
-<li> Making the webpage responsive (one page per PR) </li>
-<li> Adding database connectivity and looking in the database for valid credentials while logging in </li>
-<li> Implementing registration functionality (either linking with database or storing details in a constant for the session) </li>
-<li> Typos fixing and content enhancements </li>
-<li> Enhancing the home page, making it the landing page </li>
+<li> Fixing routes based errors (3) </li>
+<li> Fixing the deprecation warning of body parser at app.js(3)</li>
+<li> Making the webpage responsive (one page per PR)</li>(2)
+<li> Adding database connectivity and looking in the database for valid credentials while logging in </li> (5)
+<li> Implementing registration functionality (either linking with database or storing details in a constant for the session) </li> (5)
+<li> Typos fixing and content enhancements </li> (2)
+<li> Enhancing the home page, making it the landing page </li> (4)
 <li> For any other enhancements, open the issue and I shall assign it if it is appropriate.</li>
 
 <p> PS: For the issues that I have opened already, comment in the issue to let me know if you are taking it up. (like by commenting 'I would like to take this up')</p>
