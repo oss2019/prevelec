@@ -5,19 +5,19 @@ by providing them a report on their usage and providing bonusses on consuming le
 <h2> Instructions for execution of the code </h2>
 
 <h3>Software to be installed beforehand: </h3>
-1. NodeJs
+<ol><li> NodeJs </li></ol>
 
 <h3>Running the application: </h3>
-
-The website server is initiated by -
-node app.js
-~command on git bash.
+The website server is initiated by - <br>
+npm i<br>
+node app.js<br>
+~command on git bash.<br>
 
 <h2>About the website</h2>
 <ul>
 <li>You are first asked to log in to your account.
-username: abc 
-password: fgh
+<b>username</b>: abc 
+<b>password</b>: fgh
 Currently the data is hardcoded here and is not done in a secure manner either.
 </li>
 <li>
@@ -55,6 +55,7 @@ Signout: Signs a user out of the active session.
 
 <h3> Enhancements available to do </h3>
 <ul>
+<li> Fixing the deprecation warning of body parser at app.js</li>
 <li> Making the webpage responsive (one page per PR) </li>
 <li> Adding database connectivity and looking in the database for valid credentials while logging in </li>
 <li> Implementing registration functionality (either linking with database or storing details in a constant for the session) </li>
@@ -63,5 +64,5 @@ Signout: Signs a user out of the active session.
 <li> For any other enhancements, open the issue and I shall assign it if it is appropriate.</li>
 
 <p> PS: For the issues that I have opened already, comment in the issue to let me know if you are taking it up. (like by commenting 'I would like to take this up')</p>
-
+<p> For any queries, contact me at 190020009@iitdh.ac.in </p>
 -------------------------------------------------------------------------------
