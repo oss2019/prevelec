@@ -45,7 +45,7 @@ Signout: Signs a user out of the active session.
 
 <h3> How to contribute </h3>
 <ul>
-<li> Create and Issue and wait for being assigned to it. (I shall be assigning them about twice a day) </li>
+<li> Create an Issue and wait for being assigned to it. (I shall be assigning them about twice a day) </li>
 <li> Fork the repository. </li>
 <li> Make changes and commits on the forked repository </li>
 <li> Create a pull request to the master branch of the original repository </li>
