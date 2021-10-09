@@ -10,7 +10,7 @@ by providing them a report on their usage and providing bonusses on consuming le
 <h3>Steps to be performed: </h3>
 <ol>
     <li> Go to <a href="https://account.mongodb.com/account/login?signedOut=true">MongoDB Atlas</a> and log in. Then, create a cluster and connect it. An url will be provided by MongoDB. Save it somewhere as we will need it shortly.</li>
-    <li>Create a .env file in the project directory and name ot ".env". Paste the following code in it.<pre>
+    <li>Create a .env file in the project directory and name it ".env". Paste the following code in it.<pre>
     DB_URL='XXXXXXXXXX'
     JWT_SECRET='secret'
 </pre></li>
