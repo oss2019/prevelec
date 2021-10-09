@@ -14,7 +14,7 @@ by providing them a report on their usage and providing bonusses on consuming le
     DB_URL='XXXXXXXXXX'
     JWT_SECRET='secret'
 </pre></li>
-    <li>Replace the XXXXXXXXXX in DB_URL with the link obtained in step 1.</li>
+    <li>Replace the XXXXXXXXXX in DB_URL with the link obtained in step 1. Now, follow the below steps to run it.</li>
 </ol>
 
 
