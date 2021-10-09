@@ -7,6 +7,17 @@ by providing them a report on their usage and providing bonusses on consuming le
 <h3>Software to be installed beforehand: </h3>
 <ol><li> NodeJs </li></ol>
 
+<h3>Steps to be performed: </h3>
+<ol>
+    <li> Go to <a href="https://account.mongodb.com/account/login?signedOut=true">MongoDB Atlas</a> and log in. Then, create a cluster and connect it. An url will be provided by MongoDB. Save it somewhere as we will need it shortly.</li>
+    <li>Create a .env file in the project directory and name it ".env". Paste the following code in it.<pre>
+    DB_URL='XXXXXXXXXX'
+    JWT_SECRET='secret'
+</pre></li>
+    <li>Replace the XXXXXXXXXX in DB_URL with the link obtained in step 1. Now, follow the below steps to run it.</li>
+</ol>
+
+
 <h3>Running the application: </h3>
 The website server is initiated by - <br>
 npm i<br>
@@ -15,9 +26,9 @@ node app.js<br>
 <h2>About the website</h2>
 <ul>
 <li>You are first asked to log in to your account.
-<b>username</b>: abc 
-<b>password</b>: fgh
-Currently the data is hardcoded here and is not done in a secure manner either.
+</li>
+<li>
+If you don't have an account, click on register and make one. Otherwise, log in with your credentials (Username is your email id).
 </li>
 <li>
 Once logged in, you are navigated to the dashboard. The dashboard contains a graph of the energy used by the user in the year (sampled on a monthly basis).
@@ -58,7 +69,6 @@ Signout: Signs a user out of the active session.
 <li> Fixing the deprecation warning of body parser at app.js(3)</li>
 <li> Making the webpage responsive (one page per PR)</li>(2)
 <li> Adding database connectivity and looking in the database for valid credentials while logging in </li> (5)
-<li> Implementing registration functionality (either linking with database or storing details in a constant for the session) </li> (5)
 <li> Typos fixing and content enhancements </li> (2)
 <li> Enhancing the home page, making it the landing page </li> (4)
 <li> For any other enhancements, open the issue and I shall assign it if it is appropriate.</li>
