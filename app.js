@@ -26,28 +26,15 @@ let posts = [];
 app.get("/",function(req,res){
   res.render("login2");
 });
-app.post("/",function(req,res){
-  User.find({}).then((users) => {
-      users.forEach(user => {
-        creds.push({
-          uid: user.email,
-          content: user.password
-        })
-      })
-      const cred = {
-        uid: req.body.em,
-        content: req.body.pass
-      };
-    console.log(req.body.em);
-    creds.forEach(function(pred){
-      if(pred.uid==cred.uid && pred.content==cred.content)
-      {  res.render("dash");
-         count++;
-      }
-    });
-    if(count==0)
-      res.send("Try again!!");
-  }).catch(err => console.log(err));
+app.post("/",async function(req,res){
+  try{
+    var result = await User.find({email:req.body.em, password:req.body.pass});
+    if(!result) res.send('Try again!');
+    res.render("dash");
+  }
+  catch(err) {
+    console.log(err);
+  }
 });
 app.get("/home",function(req,res){
   res.render("home");
