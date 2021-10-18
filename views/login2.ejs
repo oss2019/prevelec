@@ -146,20 +146,62 @@ body {
 <body>
     
 <style type="text/css">
-	#fgh{
-		padding-top: 100px;
-		align-content: center;
-		align-self: center;
-	}
+
+input[type=text],
+input[type=password] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+      
+button {
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+    }
+.in{
+      padding: 8px;
+      border: 3px solid #f1f1f1;
+    }
+button:hover {
+        opacity: 0.8;
+    }
+.container {
+        padding: 16px;
+  }
+@media screen and (min-width: 800px) {
+      .container{
+        width: 40%;
+  }
+}
+@media screen and (max-width: 800px) {
+      .container{
+        width: 95%;
+      }
+}
+h1{
+    text-align: center;
+  }
 </style>
+<h1>LOGIN</h1>
+<form method="post">
 <div class="container" id="fgh">
-<form method="post"  >
-	<label >Email id</label>
-	<input type="text" name="em"></br>
-	<label>Password</label>
-	<input type="password" name="pass"></br>
-      <button class="btn btn-primary" type="submit" name="button">Login</button>
-      <label>Don't have an account ? <a href="register">Register Here.</a></label>
-</form>
+  <div class="in">
+  <label><b>Email Id : </b></label>
+  <input type="text" placeholder="Enter Username" name="em" required>
+
+  <label><b>Password : </b></label>
+  <input type="password" placeholder="Enter Password" name="pass" required>
+
+  <button class="btn btn-primary" type="submit" name="button">Login</button>
+  <label>Don't have an account ? <a href="register">Register Here.</a></label>
 </div>
+</div>
+
 <%- include("partials/footer"); -%>
