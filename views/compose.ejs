@@ -1,24 +1,29 @@
-
 <%- include("partials/header"); -%>
-<style type="text/css">
-  #ghj{
-    padding-top: 100px;
-  }
-</style>
-<script>
+    <style type="text/css">
+        #ghj {
+            padding-top: 100px;
+        }
+        
+        body {
+            background-color: rgba(233, 215, 112, 0.219);
+        }
+    </style>
+    <script>
+    </script>
 
-</script>
-<div class="container" id="ghj">
-    <h1>Compose</h1>
-    <form class="" action="/compose" method="post" id='compose'>
-      <div class="form-group">
-        <label>Title</label>
-        <input class="form-control" type="text" name="postTitle">
-        <label>Post</label>
-        <textarea class="form-control" name="postBody" rows="5" cols="30"></textarea>
-      </div>
-      <button class="btn btn-primary" id="sub" type="submit" name="button">Publish</button>
-      
-    </form>
-</div>
-<%- include("partials/footer"); -%>
+    <body>
+        <div class="container" id="ghj">
+            <h1>Compose</h1>
+            <form class="" action="/compose" method="post" id='compose'>
+                <div class="form-group">
+                    <label>Title</label>
+                    <input class="form-control" type="text" name="postTitle">
+                    <label>Post</label>
+                    <textarea class="form-control" name="postBody" rows="5" cols="30"></textarea>
+                </div>
+                <button class="btn btn-primary" id="sub" type="submit" name="button">Publish</button>
+
+            </form>
+        </div>
+    </body>>
+    <%- include("partials/footer"); -%>
