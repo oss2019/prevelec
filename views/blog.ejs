@@ -1,27 +1,36 @@
-
 <%- include("partials/header"); -%>
-<style type="text/css">
-	#ghj{
-		padding-top: 100px;
-	}
-</style>
-<script>
-</script>
-<div class="container" id="ghj">
-    <h1>About</h1>
-    <p> <%= startingContent %> </p>
+    <style type="text/css">
+        #ghj {
+            padding-top: 100px;
+        }
+        
+        body {
+            background-color: rgba(233, 215, 112, 0.219);
+        }
+    </style>
+    <script>
+    </script>
+
+    <body>
+        <div class="container" id="ghj">
+            <h1>About</h1>
+            <p>
+                <%= startingContent %>
+            </p>
 
 
-  <%  posts.forEach(function(post){ %>
+            <%  posts.forEach(function(post){ %>
 
-    <h1><%=post.title%></h1>
-    <p>
-    <%=post.content.substring(0, 100) + " ..."%>
-    <a href="/posts/<%=post.title%>">Read More</a>
-    </p>
+                <h1>
+                    <%=post.title%>
+                </h1>
+                <p>
+                    <%=post.content.substring(0, 100) + " ..."%>
+                        <a href="/posts/<%=post.title%>">Read More</a>
+                </p>
 
 
-    <% }) %>
-</div>
-
-<%- include("partials/footer"); -%>
+                <% }) %>
+        </div>
+    </body>
+    <%- include("partials/footer"); -%>
