@@ -130,7 +130,10 @@ app.get("/dash",function(req,res){
   res.render("dash");
 });
 app.get("/posts",function(req,res){
-res.render("blog");
+res.render("blog", {
+  startingContent: homeStartingContent,
+  posts: posts
+  });
 
 });
 app.get("/posts/:postName", function(req, res){
