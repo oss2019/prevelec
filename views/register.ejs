@@ -37,15 +37,19 @@ body.my-login-page {
 
 .my-login-page .card-wrapper {
 	width: 400px;
+
 }
 
 .my-login-page .card {
 	border-color: transparent;
 	box-shadow: 0 4px 8px rgba(0,0,0,.05);
+	border-radius:100px;
+	
 }
 
 .my-login-page .card.fat {
 	padding: 10px;
+	
 }
 
 .my-login-page .card .card-title {
@@ -55,7 +59,11 @@ body.my-login-page {
 .my-login-page .form-control {
 	border-width: 2.3px;
 }
+/* .register-title-center{
+margin-left:35%;
+margin-rigth:35%;
 
+} */
 .my-login-page .form-group label {
 	width: 100%;
 }
@@ -99,7 +107,7 @@ body.my-login-page {
 					</div>
 					<div class="card fat">
 						<div class="card-body">
-							<h4 class="card-title">Register</h4>
+							<h4  class="card-title text-center register-title-center">Register</h4>
 							<form method="POST" class="my-login-validation" novalidate="">
 								<div class="form-group">
 									<label for="name">Name</label>
@@ -138,8 +146,9 @@ body.my-login-page {
 										Register
 									</button>
 								</div>
+								
 								<div class="mt-4 text-center">
-									Already have an account? <a href="index.html">Login</a>
+									Already have an account? <a href="login">Login</a>
 								</div>
 							</form>
 						</div>
