@@ -36,9 +36,11 @@ app.post("/",async function(req,res){
     console.log(err);
   }
 });
+
 app.get("/home",function(req,res){
   res.render("home");
 });
+
 app.get("/achievements",function(req,res){
 res.render("achievements");
 
